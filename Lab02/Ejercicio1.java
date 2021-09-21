@@ -1,4 +1,3 @@
-package ejercicios;
 
 import java.util.Scanner;
 
@@ -46,7 +45,7 @@ public class Ejercicio1 {
 		// Metodo auxiliar que crea un arreglo de enteros
 		// estandar de 'n' elementos ingresados por teclado.
 		
-		System.out.println("\n¡Creando el arreglo estandar!\n");
+		System.out.println("\nÂ¡Creando el arreglo estandar!\n");
 		int[] array = new int[n];
 		Scanner scan = new Scanner(System.in);
 		for(int i = 0; i < n; i++) {
