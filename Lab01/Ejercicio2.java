@@ -1,10 +1,19 @@
-package ejercicios;
 
 import java.util.Scanner;
+
+/* 
+ * Autor: Hincho Jove, Angel Eduardo
+ * 
+ * Descripcion del problema: El presente problema pide ingresar un array estandar
+ * por teclado y luego imprimir por consola los elementos del array al reves.
+ * 
+ */
 
 public class Ejercicio2 {
 	
 	public static void main(String[] args) {
+		
+		// Metodo main del programa
 		
 		int[] array = ingresarArray();
 		imprimirArray(array);
@@ -13,6 +22,9 @@ public class Ejercicio2 {
 	}
 	
 	public static int[] ingresarArray() {
+		
+		// Metodo auxiliar para ingresar un array por entrada estandar, pide
+		// el ingreso de enteros y luego devuelve un array estandar de enteros
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Ingrese la cantidad de numeros a ingresar: ");
@@ -30,6 +42,9 @@ public class Ejercicio2 {
 	
 	public static void imprimirArray(int[] array) {
 		
+		// Metodo auxiliar para imprimir el contenido de un array,
+		// recibe un array estandar de enteros como argumento
+		
 		System.out.print("Array Ingresado: [ ");
 		for(int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + " ");
@@ -39,6 +54,10 @@ public class Ejercicio2 {
 	}
 	
 	public static void imprimirArrayReves(int[] array) {
+		
+		// El metodo 'imprimirArrayReves' recibe como argumentos un arreglo
+		// estandar de enteros, itera sobre cada uno de estos empezando desde
+		// el ultimo elemento hasta el primero mientras lo imprime por consola
 		
 		System.out.print("Array Ingresado al Reves: [ ");
 		int longitud = array.length;
