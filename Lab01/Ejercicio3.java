@@ -1,10 +1,20 @@
-package ejercicios;
 
 import java.util.Scanner;
+
+/* 
+ * Autor: Hincho Jove, Angel Eduardo
+ * 
+ * Descripcion del problema: El presente problema pide ingresar un array estandar
+ * por teclado y luego imprimir por consola los elementos que son pares e impares
+ * por separado. Para ello se utilizara un metodo auxiliar 'filtrar'
+ * 
+ */
 
 public class Ejercicio3 {
 	
 	public static void main(String[] args) {
+		
+		// Metodo main del programa
 		
 		int[] array = ingresarArray();
 		imprimirArray(array);
@@ -13,6 +23,9 @@ public class Ejercicio3 {
 	}
 	
 	public static int[] ingresarArray() {
+		
+		// Metodo auxiliar para ingresar un array por entrada estandar, pide
+		// el ingreso de enteros y luego devuelve un array estandar de enteros
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Ingrese la cantidad de numeros a ingresar: ");
@@ -30,6 +43,9 @@ public class Ejercicio3 {
 	
 	public static void imprimirArray(int[] array) {
 		
+		// Metodo auxiliar para imprimir el contenido de un array,
+		// recibe un array estandar de enteros como argumento
+		
 		System.out.print("Array Ingresado: [ ");
 		for(int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + " ");
@@ -39,6 +55,12 @@ public class Ejercicio3 {
 	}
 	
 	public static String filtrar(int[] array) {
+		
+		// Metodo 'filtrar' recibe como argumentos un array estandar de
+		// enteros e itera sobre cada uno de sus elementos. En cada iteracion
+		// se verifica si el entero es impar o par, dependiendo de la respuesta
+		// el elemento o entero se almacena en las variable de tipo String
+		// 'Pares' o 'Impares' para finalmente ser devolver estas dos variables
 		
 		String pares = "Pares: ";
 		String impares = "Impares: ";
