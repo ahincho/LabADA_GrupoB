@@ -1,10 +1,20 @@
-package ejercicios;
 
 import java.util.Scanner;
+
+/* 
+ * Autor: Hincho Jove, Angel Eduardo
+ * 
+ * Descripcion del problema: El presente problema nos pide crear
+ * un codigo para leer un array por entrada estandar y sumar sus
+ * elementos para finalmente mostrarlos por consola
+ *
+ */
 
 public class Ejercicio1 {
 	
 	public static void main(String[] args) {
+		
+		// Metodo main del programa
 		
 		int[] array = ingresarArray();
 		imprimirArray(array);
@@ -13,6 +23,8 @@ public class Ejercicio1 {
 	}
 	
 	public static int[] ingresarArray() {
+		
+		// Metodo auxiliar para ingresar un array por entrada estandar
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Ingrese la cantidad de numeros a ingresar: ");
@@ -30,6 +42,10 @@ public class Ejercicio1 {
 	
 	public static int sumarArray(int[] array) {
 		
+		// Metodo 'sumarArray' recibe un array estandar de enteros y
+		// retornar una variable de tipo entero que es la suma de sus
+		// elementos, elementos del array recibido
+		
 		int acumulado = 0;
 		for(int i = 0; i < array.length; i++) {
 			acumulado += array[i];
@@ -39,6 +55,9 @@ public class Ejercicio1 {
 	}
 	
 	public static void imprimirArray(int[] array) {
+		
+		// Metodo auxiliar para imprimir el contenido de un array,
+		// recibe un array estandar de enteros como argumento
 		
 		System.out.print("Array Ingresado: [ ");
 		for(int i = 0; i < array.length; i++) {
