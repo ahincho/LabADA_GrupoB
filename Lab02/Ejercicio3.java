@@ -1,4 +1,13 @@
 
+/* 
+ * Autor: Hincho Jove, Angel Eduardo
+ * 
+ * Descripcion del problema: Se nos pide ordenar un arreglo estandar de
+ * elementos, en este caso numeros enteros, usando el algoritmo de ordenacion
+ * por insercion asi como mostrar el antes y despues de estar ordenado
+ * 
+ */
+
 public class Ejercicio3 {
 	
 	public static void main(String[] args) {
