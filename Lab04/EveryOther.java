@@ -34,7 +34,7 @@ public class EveryOther {
 			// Si el indice es par entonces debemos sumar con los demas
 			if(i % 2 == 0) {
 				
-				System.out.println("Posicion en el elemento: " + a[i]);
+				System.out.println("Posicion par en el elemento: " + a[i]);
 				
 				// Se tiene que sumar el numero en posicion par
 				// con los demas numeros dentro del arreglo
