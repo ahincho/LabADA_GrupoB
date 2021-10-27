@@ -63,11 +63,11 @@ public class Pick_Resume {
 	 * 
 	 * Calculo:
 	 * 
-	 * 	resumes.length
+	 *  resumes.length
 	 * ----------------
-	 * 	  n / 2 ^ 1	   	
+	 *    n / 2 ^ 1	   	
 	 * ----------------
-	 * 	  n / 2 ^ 2	      
+	 *    n / 2 ^ 2	      
 	 * ----------------
 	 *    n / 2 ^ 3
 	 * ----------------
