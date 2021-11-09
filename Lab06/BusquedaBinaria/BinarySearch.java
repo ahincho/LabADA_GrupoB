@@ -57,8 +57,8 @@ public class BinarySearch {
 				// es igual al que se esta buscando, se encontro.
 				
 				System.out.print("Encontrado ");
-				return search;
-				
+				return a[mid];
+			
 			} else if (a[mid] < search) {
 				
 				// Si el valor del indice 'medio' es menor
