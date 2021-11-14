@@ -24,7 +24,7 @@ public class ColorBoard {
 		
 		printBoard(board);
 		
-		colorBoard(board, 2, 2);
+		colorBoard(board, 5, 5);
 		
 	}
 	
@@ -46,10 +46,17 @@ public class ColorBoard {
 			
 			for(int i = 0; i < 4; i++) {
 				
-				if(!isWall(board[row + dx[i]][column + dy[i]])
-						&& !isColored(board[row + dx[i]][column + dy[i]])) {
+				// Antes de llamar recursivamente, verificar si
+				// es una posicion dentro del tablero valida
+				
+				if(isValid(board, row + dx[i], column + dy[i])) {
 					
-					colorBoard(board, row + dx[i], column + dy[i]);
+					if(!isWall(board[row + dx[i]][column + dy[i]])
+							&& !isColored(board[row + dx[i]][column + dy[i]])) {
+						
+						colorBoard(board, row + dx[i], column + dy[i]);
+						
+					}
 					
 				}
 				
@@ -90,13 +97,15 @@ public class ColorBoard {
 		
 	}
 	
+	// Posicion minima = 0, maxima = board.length - 1
+	
 	public static boolean isValid(int[][] board, int row, int column) {
 		
 		// Verifica si la fila y columna se encuentra
 		// dentro del tablero o arreglo bidimensional
 		
-		return (row > 0 && row < board.length - 1) &&
-			(column > 0 && column < board[row].length - 1);
+		return (row > -1 && row <= board.length - 1) &&
+			(column > -1 && column <= board[row].length - 1);
 		
 	}
 	
