@@ -1,4 +1,13 @@
 
+/* 
+ * Autor: Hincho Jove, Angel Eduardo
+ * 
+ * Descripcion del Problema: Se pide verificar el ingreso
+ * correcto de parentesis, apertura y cierre, usando una
+ * Pila que apile los parentesis y controle los 'errores'
+ * 
+ */
+
 import java.util.Stack;
 
 public class AddParentheses {
