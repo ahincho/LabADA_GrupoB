@@ -1,3 +1,13 @@
+
+/* 
+ * Autor: Hincho Jove, Angel Eduardo
+ * 
+ * Descripcion del Problema: Implementar la Representacion Inversa
+ * Polaca para las 4 operaciones basicas matematicas (suma, resta,
+ * multiplicacion y division) usando una Pila como estructura
+ * 
+ */
+
 package pilas;
 
 import java.util.Stack;
