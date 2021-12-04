@@ -22,9 +22,9 @@ public class MaximalSquare {
 		// Recibimos la matriz con los caracteres 0's y 1's
 		
 		char[][] matrix = { { '1', '0', '1', '0', '0' },
-							{ '1', '0', '1', '1', '1' },
-							{ '1', '1', '1', '1', '1' },
-							{ '1', '0', '0', '1', '0' } };
+				    { '1', '0', '1', '1', '1' },
+				    { '1', '1', '1', '1', '1' },
+				    { '1', '0', '0', '1', '0' } };
 		
 		System.out.println(maximalSquare(matrix));
 		
