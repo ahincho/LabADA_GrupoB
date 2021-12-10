@@ -2,7 +2,7 @@
 /* 
  * Autor: Hincho Jove, Angel Eduardo
  * 
- * Descripcion del Problema: Parecido al Problema de la Mochila
+ * Descripcion del Problema:
  * 
  * Se nos entrega un arreglo estandar de enteros que representan
  * las diferentes longitudes de pedazos de cuerda. Estos pedazos
