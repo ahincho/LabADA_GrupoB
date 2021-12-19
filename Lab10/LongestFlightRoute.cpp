@@ -231,7 +231,7 @@ int main() {
 
     /*
         Finalmente una vez guardada la respuesta en orden inverso, desde
-        la Ciudad o Vertice 1 hacia la Ciudad 'n' o Vertice 'n' menos
+        la Ciudad o Vertice 1 hacia la Ciudad 'n' o Vertice 'n'
     */
 
     for(int i = 0; i <= routes; i++) {
